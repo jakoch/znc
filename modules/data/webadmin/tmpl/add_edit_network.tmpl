@@ -83,7 +83,7 @@
 
 				<div class="subsection">
 					<div class="inputlabel">Flood protection burst:</div>
-					<input type="number" name="floodburst" min="1" id="floodburst"
+					<input type="number" name="floodburst" value="<? VAR FloodBurst ?>" min="1" id="floodburst"
 						   title="Defines the number of lines, which can immediately be send."
 						<? IF FloodProtection ?> value="<? VAR FloodBurst ?>" <? ELSE ?> value="4" disabled="disabled" <? ENDIF ?>
 					/> lines can be send immediately
