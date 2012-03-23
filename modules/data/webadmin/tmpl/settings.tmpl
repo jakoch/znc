@@ -168,7 +168,8 @@
 						<td class="mod_name">
 							<input type="checkbox" name="loadmod" id="lm_<? VAR Name ?>" value="<? VAR Name ?>"
 							<? IF Checked ?> checked="checked"<? ENDIF ?>
-							<? IF Disabled ?> disabled="disabled"<? ENDIF ?> />
+							<? IF Disabled ?> disabled="disabled"<? ENDIF ?>
+							<? IF ArgsHelpText ?> title="<? VAR ArgsHelpText ?>"<? ENDIF ?> />
 							<label for="lm_<? VAR Name ?>">
 							<? IF Wiki ?><a href="http://wiki.znc.in/<? VAR Wiki ?>"><? VAR Name ?></a>
 							<? ELSE ?> <? VAR Name ?> <? ENDIF ?></label>
