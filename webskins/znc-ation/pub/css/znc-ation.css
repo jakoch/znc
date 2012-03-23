@@ -1,0 +1,116 @@
+body {
+    background-color: #F8F8F8;
+    color: #333333;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 18px;
+}
+
+#wrapper {
+    width: 960px;
+    margin: 20px auto;
+    border: 1px solid #BABABA;
+    box-shadow: 1px 1px 2px #CCC
+}
+
+.wrapper { /* strange, i needed a class attr to overload the css from wrapper id */.
+   min-heigth: 300px;
+}
+
+#banner_top {
+   background-color: #B8B8B8;
+}
+
+#infobar {
+   background-color: white;
+}
+
+#breadcrumb {
+   font-weight: bold;
+}
+
+/* raquo vertical alignment in breadcrumb */
+.raquo {
+    font-size: large;
+    font-weight: normal;
+    line-height: 18px;
+    vertical-align: top;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+/* tables */
+table {
+  font-size: 14px;
+}
+thead td, th {
+  background-color: #BEBEBE;
+}
+
+tbody td {
+  background-color: #E0E0E0;
+}
+
+td, th {
+    min-width: 50px;
+    padding: 4px 12px;
+}
+
+/* sections */
+.section {
+    border: 1px solid #CCCCCC;
+    border-radius: 3px 3px 3px 3px;
+    padding: 10px;
+    margin-bottom: 10px;
+    padding-top: 5px;
+    box-shadow: 1px 1px #FFFFFF; /* inset */
+}
+
+/* formelements */
+.sectionbody input, textarea, select {
+    border: 1px solid #CCCCCC;
+    font-family: Tahoma,sans-serif;
+    font-size: 14px;
+    padding: 3px;
+}
+
+.subsection .inputlabel {
+    margin-right: 15px;
+    padding: 10px 5px 0 0;
+    text-align: left;
+    width: 130px;
+}
+
+/* formelement focus */
+input:focus, textarea:focus, select:focus {
+    border: 1px solid #999;
+    box-shadow: 0px 0px 2px #C7BF93; /* shadow color = tooltip border color */
+}
+
+/* h */
+h3 {
+  text-shadow: 1px 1px 0 white;
+  margin: 0 -11px 10px;
+  padding-bottom: 4px;
+  padding-left: 11px;
+  border-bottom: 1px solid #DDDDDD;
+}
+
+#banner-top {
+    background-color: #999999;
+}
+
+h1 {
+  -moz-transition: all 0.2s linear 0s;
+  color: #000000;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: bold;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 0 30px rgba(255, 255, 255, 0.125);
+}
+
+td.mod_name {
+  font-size: 13px;
+}
+
