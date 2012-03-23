@@ -1,5 +1,5 @@
 					<div id="breadcrumb">ZNC
-						<? IF ModName ?><b>&raquo;</b> Module <? VAR ModName ?><? ENDIF ?>
-						<? REM ?><? IF PageName ?><b>&raquo;</b> <? VAR PageName ?><? ENDIF ?><? ENDREM ?>
-						<? IF Title && Title != *ModName ?><b>&raquo;</b> <? VAR Title ?><? ENDIF ?>
-					</div>
+                        <? IF ModName ?><span class="raquo">&raquo;</span> Module <? VAR ModName ?><? ENDIF ?>
+                        <? REM ?><? IF PageName ?><span class="raquo">&raquo;</span> <? VAR PageName ?><? ENDIF ?><? ENDREM ?>
+                        <? IF Title && Title != *ModName ?><span class="raquo">&raquo;</span> <? VAR Title ?><? ENDIF ?>
+                    </div>
