@@ -23,6 +23,7 @@ body {
 }
 
 #breadcrumb {
+	font-size: 1.2em;
 	font-weight: bold;
 	border-bottom: 1px solid #CCCCCC;
 }
