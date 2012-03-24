@@ -1,0 +1,20 @@
+<div class="box infobar marg-10 float-right">
+
+	<div class="heading red rounded-bottom-right">
+		<img src="pub/img/key.png" alt="key.png">
+		Login
+	</div>
+
+	<div class="box-inner-content">
+
+		<span id="infobar_ident">
+			Logged in as <span class="user_name"><? VAR SessionUser DEFAULT="-Guest-" ?></span>
+			<br/>
+			From IP <? VAR SessionIP ?>
+		</span>
+
+		<? INC LoginBar.tmpl ?>
+
+	</div>
+
+</div>
