@@ -1,116 +1,235 @@
 body {
-    background-color: #F8F8F8;
-    color: #333333;
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 13px;
-    font-weight: normal;
-    line-height: 18px;
+	background-color: #F8F8F8;
+	color: #333333;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 13px;
+	font-weight: normal;
+	line-height: 18px;
 }
 
 #wrapper {
-    width: 960px;
-    margin: 20px auto;
-    border: 1px solid #BABABA;
-    box-shadow: 1px 1px 2px #CCC
+	width: 960px;
+	margin: 20px auto;
+	border: 1px solid #BABABA;
+	box-shadow: 1px 1px 2px #CCC
 }
 
-.wrapper { /* strange, i needed a class attr to overload the css from wrapper id */.
-   min-heigth: 300px;
+.wrapper { /* strange, i needed a class attr to overload the css from wrapper id */
+	min-heigth: 300px;
 }
 
 #banner_top {
-   background-color: #B8B8B8;
-}
-
-#infobar {
-   background-color: white;
+	background-color: #B8B8B8;
 }
 
 #breadcrumb {
-   font-weight: bold;
+	font-weight: bold;
+	border-bottom: 1px solid #CCCCCC;
 }
 
 /* raquo vertical alignment in breadcrumb */
 .raquo {
-    font-size: large;
-    font-weight: normal;
-    line-height: 18px;
-    vertical-align: top;
-    margin-left: 3px;
-    margin-right: 3px;
+	font-size: large;
+	font-weight: normal;
+	line-height: 18px;
+	vertical-align: top;
+	margin-left: 3px;
+	margin-right: 3px;
 }
 
 /* tables */
 table {
-  font-size: 14px;
+	font-size: 14px;
 }
 thead td, th {
-  background-color: #BEBEBE;
+	background-color: #BEBEBE;
 }
 
 tbody td {
-  background-color: #E0E0E0;
+	background-color: #E0E0E0;
 }
 
 td, th {
-    min-width: 50px;
-    padding: 4px 12px;
+	min-width: 50px;
+	padding: 4px 12px;
 }
 
 /* sections */
 .section {
-    border: 1px solid #CCCCCC;
-    border-radius: 3px 3px 3px 3px;
-    padding: 10px;
-    margin-bottom: 10px;
-    padding-top: 5px;
-    box-shadow: 1px 1px #FFFFFF; /* inset */
+	border: 1px solid #CCCCCC;
+	border-radius: 3px 3px 3px 3px;
+	padding: 10px;
+	margin-bottom: 10px;
+	padding-top: 5px;
+	box-shadow: 1px 1px #FFFFFF; /* inset */
 }
 
 /* formelements */
 .sectionbody input, textarea, select {
-    border: 1px solid #CCCCCC;
-    font-family: Tahoma,sans-serif;
-    font-size: 14px;
-    padding: 3px;
+	border: 1px solid #CCCCCC;
+	font-family: Tahoma,sans-serif;
+	font-size: 14px;
+	padding: 3px;
 }
 
 .subsection .inputlabel {
-    margin-right: 15px;
-    padding: 10px 5px 0 0;
-    text-align: left;
-    width: 130px;
+	margin-right: 15px;
+	padding: 10px 5px 0 0;
+	text-align: left;
+	width: 130px;
 }
 
 /* formelement focus */
 input:focus, textarea:focus, select:focus {
-    border: 1px solid #999;
-    box-shadow: 0px 0px 2px #C7BF93; /* shadow color = tooltip border color */
+	border: 1px solid #999;
+	box-shadow: 0px 0px 2px #C7BF93; /* shadow color = tooltip border color */
 }
 
 /* h */
 h3 {
-  text-shadow: 1px 1px 0 white;
-  margin: 0 -11px 10px;
-  padding-bottom: 4px;
-  padding-left: 11px;
-  border-bottom: 1px solid #DDDDDD;
+	text-shadow: 1px 1px 0 white;
+	margin: 0 -11px 10px;
+	padding-bottom: 4px;
+	padding-left: 11px;
+	border-bottom: 1px solid #DDDDDD;
 }
 
 #banner-top {
-    background-color: #999999;
+	background-color: #999999;
 }
 
 h1 {
-  -moz-transition: all 0.2s linear 0s;
-  color: #000000;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: bold;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 0 30px rgba(255, 255, 255, 0.125);
+	-moz-transition: all 0.2s linear 0s;
+	color: #000000;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: bold;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 0 30px rgba(255, 255, 255, 0.125);
 }
 
 td.mod_name {
-  font-size: 13px;
+	font-size: 13px;
 }
 
+/* login + logout boxes */
+#infobar {
+	background-color: #CCCCCC;
+	clear: both;
+	margin-left: 660px;
+	position: relative;
+	text-align: right;
+	top: -23px;
+}
+
+#infobar_ident, .logoutbox, .loginbox {
+	color: #000;
+	font-size: 12px;
+	padding: 0px;
+	margin-top: 4px;
+}
+
+.user_name {
+	color: black;
+	font-weight: bold;
+	text-shadow: -1px 1px 1px #DDDDDD;
+}
+
+#menu {
+	margin-left: 750px;
+	border: 1px solid white;
+}
+
+input.full, textarea.full, .full input, .full textarea {
+	width: 450px;
+}
+
+input[type="submit"] {
+	background: -moz-linear-gradient(center top , #E1001A, #C50A1F) repeat scroll 0 0 transparent;
+	border: 1px double #E35061;
+	border-radius: 0 0 0 0;
+	box-shadow: 1px 0 0 #C50A1F, -1px 0 0 #C50A1F, 0 1px 0 #C50A1F, 0 -1px 0 #C50A1F, 0 5px 10px -5px #666666;
+	color: #FFFFFF;
+	cursor: pointer;
+	padding: 0px 25px;
+	text-shadow: 1px 1px 3px #333333;
+	width: auto;
+	heigth: 15px;
+	font-weight: bold;
+}
+
+input[type="submit"]:hover {
+	background: none repeat scroll 0 0 #C50A1F;
+	text-shadow: none;
+}
+
+div.submitline {
+	line-heigth: 15px;
+}
+
+/* header banner - 3d css ribbon */
+header {
+	margin: 0px auto;
+	width: 980px;
+}
+
+.ribbon {
+	float: left;
+	position: relative;
+	top: 30px;
+	width: 992px;
+	background: -moz-linear-gradient(center top , #E1001A, #C50A1F) repeat scroll 0 0 transparent;
+	height: 50px;
+	-moz-box-shadow: 0px 0px 4px rgba(0,0,0,0.55);
+	-khtml-box-shadow: 0px 0px 4px rgba(0,0,0,0.55);
+	-webkit-box-shadow: 0px 0px 4px rgba(0,0,0,0.55);
+	z-index: 100; /* the stack order: foreground */
+	left: -6px;
+}
+
+.ribbon h1 {
+	background: transparent;
+	font-size: 30px;
+	padding-left: 35px;
+	padding-top: 6px;
+	text-align: left;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 0 30px rgba(255, 255, 255, 0.125);
+	width: auto;
+}
+
+.ribbon small {
+	font-size: 40%;
+}
+
+.triangle-left {
+	border-color: transparent darkred transparent transparent;
+	border-style: solid;
+	border-width: 15px;
+	height: 0;
+	left: -21px;
+	position: relative;
+	top: 65px;
+	width: 0;
+	z-index: -1;
+}
+
+.triangle-right {
+	border-color: transparent transparent transparent darkred;
+	border-style: solid;
+	border-width: 15px;
+	height: 0;
+	left: 971px;
+	position: relative;
+	top: 35px;
+	width: 0;
+	z-index: -1;
+}
+
+/* fake content box above the ribbon */
+.content-above-ribbon {
+	border: 1px solid #BABABA;
+	box-shadow: 1px 1px 2px #CCCCCC;
+	margin: 0 auto;
+	position: relative;
+	top: 35px;
+	width: 960px;
+}
