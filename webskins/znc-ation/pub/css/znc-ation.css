@@ -279,6 +279,7 @@ header {
     /* text inset, kind of a relief look*/
     text-shadow: 1px 1px 0 #E1001A, -1px -1px 0 #C50A1F;
     width: auto;
+    line-height: 37px;
 }
 
 .ribbon small {
