@@ -261,7 +261,8 @@ header {
     position: relative;
     top: 30px;
     width: 992px;
-    background: -moz-linear-gradient(center top , #E1001A, #C50A1F) repeat scroll 0 0 transparent;
+    /* red high contrast ( #E1001A, #C50A1F ) - bit darker: #BF3030, #B50A0A;  */
+    background: -moz-linear-gradient(center top , #BF3030, #B50A0A) repeat scroll 0 0 transparent;
     height: 50px;
     -moz-box-shadow: 0px 0px 4px rgba(0,0,0,0.55);
     -khtml-box-shadow: 0px 0px 4px rgba(0,0,0,0.55);
