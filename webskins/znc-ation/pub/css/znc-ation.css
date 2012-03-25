@@ -97,6 +97,7 @@ td, th {
 	margin-bottom: 10px;
 	padding-top: 5px;
 	box-shadow: 1px 1px #FFFFFF; /* inset */
+	background-color: #EDEDED;
 }
 
 /* formelements */
