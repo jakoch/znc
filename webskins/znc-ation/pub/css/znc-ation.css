@@ -30,6 +30,20 @@ a:hover {color: red}  /* mouse over link */
 	min-height: 450px;
 }
 
+.errorbar {
+	background-color: #FFBABA;
+	background-position: 10px center;
+	background-repeat: no-repeat;
+	border: 2px double #C50A1F;
+	color: #D8000C;
+	float: left;
+	margin: 10px 0;
+	padding: 15px 10px 15px 50px;
+	width: 64%;
+	margin-left: 10px;
+	background-image: url('/pub/img/error.png');
+}
+
 .section, .subsection {
 	clear: none; /* to hell with clear both */
 }
