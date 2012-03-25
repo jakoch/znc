@@ -38,10 +38,12 @@ aside {
 }
 
 #breadcrumb {
-   font-weight: bold;
-   border-bottom: 1px solid #CCCCCC;
-   /* 2/3 of the main content width */
-   width: 67%;
+  font-weight: bold;
+  border-bottom: 1px solid #CCCCCC;
+  /* 2/3 of the main content width */
+  width: 67%;
+  margin-bottom: 10px;
+  padding: 0 0 3px 1px;
 }
 
 /* raquo vertical alignment in breadcrumb */
