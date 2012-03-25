@@ -220,7 +220,7 @@ public:
 	const CString& GetDescription() const { return m_sDescription; }
 	const CString& GetWikiPage() const { return m_sWikiPage; }
 	const CString& GetArgsHelpText() const { return m_sArgsHelpText; }
-	const CString& GetHasArgs() const { return m_sHasArgs; }
+	bool GetHasArgs() const { return m_bHasArgs; }
 	ModLoader GetLoader() const { return m_fLoader; }
 	EModuleType GetDefaultType() const { return m_eDefaultType; }
 	// !Getters
@@ -231,7 +231,7 @@ public:
 	void SetDescription(const CString& s) { m_sDescription = s; }
 	void SetWikiPage(const CString& s) { m_sWikiPage = s; }
 	void SetArgsHelpText(const CString& s) { m_sArgsHelpText = s; }
-	void SetHasArgs(const CString& s) { m_sHasArgs = s; }
+	void SetHasArgs(bool m_bHasArgs) { m_bHasArgs = b; }
 	void SetLoader(ModLoader fLoader) { m_fLoader = fLoader; }
 	void SetDefaultType(EModuleType eType) { m_eDefaultType = eType; }
 	// !Setters
@@ -244,7 +244,7 @@ protected:
 	CString         m_sDescription;
 	CString         m_sWikiPage;
 	CString         m_sArgsHelpText;
-	CString         m_sHasArgs;
+	bool            m_bHasArgs;
 	ModLoader       m_fLoader;
 };
 
