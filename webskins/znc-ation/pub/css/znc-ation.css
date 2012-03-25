@@ -11,13 +11,9 @@ body {
     width: 960px;
     margin: 20px auto;
     border: 1px solid #BABABA;
-    box-shadow: 1px 1px 2px #CCC
+    box-shadow: 1px 1px 2px #CCC;
+    min-height: 450px;
 }
-
-.wrapper { /* strange, i needed a class attr to overload the css from wrapper id */
-   min-heigth: 300px;
-}
-
 
 .section, .subsection {
    clear: none; /* to hell with clear both */
