@@ -64,9 +64,11 @@ aside {
 		font-size: large;
 		font-weight: normal;
 		line-height: 18px;
-		vertical-align: top;
 		margin-left: 3px;
 		margin-right: 3px;
+		position: relative;
+    	top: -3px;
+    	vertical-align: middle;
 }
 
 /* tables */
