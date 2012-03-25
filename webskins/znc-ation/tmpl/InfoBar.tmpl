@@ -7,11 +7,13 @@
 
 	<div class="box-inner-content">
 
+		<? IF LoggedIn ?>
 		<span id="infobar_ident">
 			Logged in as <span class="user_name"><? VAR SessionUser DEFAULT="-Guest-" ?></span>
 			<br/>
 			From IP <? VAR SessionIP ?>
 		</span>
+		<? ENDIF ?>
 
 		<? INC LoginBar.tmpl ?>
 
