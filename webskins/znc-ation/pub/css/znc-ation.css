@@ -98,10 +98,6 @@ td, th {
     width: 130px;
 }
 
-form {
-  padding: 5px;
-}
-
 input {
  padding: 3px;
  width: 80%;
@@ -213,6 +209,8 @@ td.mod_name {
 #infobar_ident, .logoutbox, .loginbox {
   font-size: 14px;
   display: block;
+  padding: 4px;
+  margin-left: 20px;
 }
 
 .user_name {
