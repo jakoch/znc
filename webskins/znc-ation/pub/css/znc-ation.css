@@ -45,7 +45,7 @@ a:hover {color: red}  /* mouse over link */
 }
 
 .section, .subsection {
-	clear: none; /* to hell with clear both */
+
 }
 
 #main {
@@ -103,6 +103,9 @@ td, th {
 	padding: 4px 12px;
 }
 
+tr.evenrow td {
+    background-color: #D3D3D3;
+}
 /* sections */
 .section {
 	border: 1px solid #CCCCCC;
@@ -112,6 +115,7 @@ td, th {
 	padding-top: 5px;
 	box-shadow: 1px 1px #FFFFFF; /* inset */
 	background-color: #EDEDED;
+        width: 100%; /* of main content */
 }
 
 /* formelements */
@@ -122,17 +126,57 @@ td, th {
 	/*padding: 3px;*/
 }
 
+.subsection { /* groups a div inputlabel (label) and formelement */
+    display: table;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 100%;
+}
+
+.subsection .checkbox {
+    padding: 10px;
+    text-align: left;
+}
+
+.checkboxandlabel {
+    width: 20%;
+}
+
 .subsection .inputlabel {
-	margin-right: 15px;
-	padding: 10px 5px 0 0;
+	padding: 6px 10px 0 0; /* distance between "tr"s */
 	text-align: left;
-	width: 130px;
+	width: 130px; /* table cell size */
+        display: table-cell; /* input label is displayed as a table cell */
+        vertical-align: top;
 }
 
 input {
 	padding: 3px;
 	width: 80%;
 	border: 1px solid #999999;
+}
+
+input[type=checkbox],
+input[type=radio]
+{
+    margin: 2px 5px 2px 2px; /* 2nd value is distance between checkbox/radio and labeling text */
+    border: 0px;
+    width: 10%;
+    height: 16px;
+    width: 16px;
+}
+
+input[type=checkbox]:checked
+    {
+        background: #0080FF;
+        height: 16px;
+        width: 16px;
+        padding: 0 0 0 0px;
+    }
+
+input[disabled] {
+   border: 1px solid #999;
+   background-color: #ddd;
 }
 
 /* formelement focus */
@@ -251,7 +295,11 @@ td.mod_name {
 }
 
 input.full, textarea.full, .full input, .full textarea {
-	width: 350px;
+    width: 90%;
+}
+
+input.half, textarea.half, .half input, .half textarea {
+    width: 50%;
 }
 
 input[type="submit"] {
@@ -392,11 +440,10 @@ ul.nav li.active:before {
 	font-weight: bold;
 	/* element is indented by size of content, so subtract width of content */
 	/* add width of padding-right */
-	margin-left: -18px;
+	margin-left: -16px;
 	/* vertical-align: middle; didnt work exact (2px off :( ), workaround: */
 	top: -2px;
 	position: relative;
-	padding-right: 3px; /* distance between raqou and element */
 }
 
 ul.nav li .title {
@@ -416,8 +463,8 @@ ul a:hover:before, ul a:focus:before {
 	font-weight: bold;
 	/* element is indented by size of content, so subtract width of content */
 	/* add width of padding-right */
-	margin-left: -15px;
-	padding-right: 3px; /* distance between raqou and element */
+	margin-left: -16px;
+	padding-right: 4px; /* distance between raqou and element */
 	/* vertical-align: middle; didnt work exact (2px off :( ), workaround: */
 	top: -2px;
 	position: relative;
