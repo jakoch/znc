@@ -18,8 +18,9 @@ $(document).ready(function()
     });
     /**
      * jQ.Checkbox
-     * Replace input formelements of type checkbox with an image toggle.
+     * Hides input formelements of type checkbox and radio.
+     * Replaces placeholder image empty.png with an image toggle.
      */
-    $('input:checkbox)').checkbox();
-    $('input:radio').checkbox();
+    $('input:checkbox').checkbox({empty: '/pub/img/empty.png'});
+    $('input:radio').checkbox({empty: '/pub/img/empty.png'});
 })
