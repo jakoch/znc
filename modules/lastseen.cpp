@@ -131,7 +131,6 @@ public:
 
 template<> void TModInfo<CLastSeenMod>(CModInfo& Info) {
 	Info.SetWikiPage("lastseen");
- 	Info.SetHasArgs(false);
 }
 
 GLOBALMODULEDEFS(CLastSeenMod, "Collects data about when a user last logged in")

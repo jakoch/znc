@@ -166,7 +166,6 @@ private:
 
 template<> void TModInfo<CAdminLogMod>(CModInfo& Info) {
 	Info.SetWikiPage("adminlog");
-	Info.SetHasArgs(false);
 }
 
 GLOBALMODULEDEFS(CAdminLogMod, "Log ZNC events to file and/or syslog.")

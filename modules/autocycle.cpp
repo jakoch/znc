@@ -237,7 +237,6 @@ private:
 
 template<> void TModInfo<CAutoCycleMod>(CModInfo& Info) {
 	Info.SetWikiPage("autocycle");
-	Info.SetHasArgs(false);
 }
 
 USERMODULEDEFS(CAutoCycleMod, "Rejoins channels to gain Op if you're the only user left")

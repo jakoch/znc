@@ -31,7 +31,6 @@ public:
 
 template<> void TModInfo<CKickClientOnIRCDisconnect>(CModInfo& Info) {
 	Info.SetWikiPage("disconkick");
-	Info.SetHasArgs(false);
 }
 
 USERMODULEDEFS(CKickClientOnIRCDisconnect, "Kicks the client from all channels when the connection to the IRC server is lost")

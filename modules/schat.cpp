@@ -467,7 +467,6 @@ void CRemMarkerJob::RunJob()
 
 template<> void TModInfo<CSChat>(CModInfo& Info) {
 	Info.SetWikiPage("schat");
-	Info.SetHasArgs(false);
 }
 
 NETWORKMODULEDEFS(CSChat, "Secure cross platform (:P) chat system")
