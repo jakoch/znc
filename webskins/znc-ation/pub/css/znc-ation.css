@@ -44,10 +44,6 @@ a:hover {color: red}  /* mouse over link */
 	background-image: url('/pub/img/error.png');
 }
 
-.section, .subsection {
-
-}
-
 #main {
 	padding: 20px;
 }
@@ -145,9 +141,9 @@ tr.evenrow td {
 .subsection .inputlabel {
 	padding: 6px 10px 0 0; /* distance between "tr"s */
 	text-align: left;
-	width: 130px; /* table cell size */
-        display: table-cell; /* input label is displayed as a table cell */
-        vertical-align: top;
+	width: 150px; /* table cell size */
+    display: table-cell; /* input label is displayed as a table cell */
+    vertical-align: top;
 }
 
 input {
