@@ -135,7 +135,9 @@ tr.evenrow td {
 }
 
 .checkboxandlabel {
-    width: 20%;
+    display: inline-block;
+    width: 150px;
+    margin-right: 50px;
 }
 
 .subsection .inputlabel {
@@ -160,7 +162,6 @@ input[type=radio]
     width: 10%;
     height: 16px;
     width: 16px;
-    vertical-align: top;
 }
 
 input[type=checkbox]:checked
