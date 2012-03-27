@@ -15,12 +15,5 @@ $(document).ready(function()
         alignX: 'inner-left',
         offsetX: 0,
         offsetY: 5
-    });
-    /**
-     * jQ.Checkbox
-     * Hides input formelements of type checkbox and radio.
-     * Replaces placeholder image empty.png with an image toggle.
-     */
-    $('input:checkbox').checkbox({empty: '/pub/img/empty.png'});
-    $('input:radio').checkbox({empty: '/pub/img/empty.png'});
+    });    
 })
