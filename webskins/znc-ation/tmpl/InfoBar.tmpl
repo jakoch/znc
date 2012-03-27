@@ -1,7 +1,11 @@
 <div class="box infobar marg-10 float-right">
 
 	<div class="heading red rounded-bottom-right">
+		<? IF LoggedIn ?>
+		<img src="/pub/img/user.png" alt="user.png">
+		<? ELSE ?>
 		<img src="/pub/img/key.png" alt="key.png">
+		<? ENDIF ?>
 		Login
 	</div>
 
