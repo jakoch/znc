@@ -160,6 +160,7 @@ input[type=radio]
     width: 10%;
     height: 16px;
     width: 16px;
+    vertical-align: top;
 }
 
 input[type=checkbox]:checked
