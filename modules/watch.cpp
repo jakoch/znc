@@ -553,6 +553,7 @@ private:
 
 template<> void TModInfo<CWatcherMod>(CModInfo& Info) {
 	Info.SetWikiPage("watch");
+	Info.SetHasArgs(false);
 }
 
 NETWORKMODULEDEFS(CWatcherMod, "Copy activity from a specific user into a separate window")

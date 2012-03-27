@@ -480,6 +480,7 @@ void CAutoOpTimer::RunJob() {
 
 template<> void TModInfo<CAutoOpMod>(CModInfo& Info) {
 	Info.SetWikiPage("autoop");
+	Info.SetHasArgs(false);
 }
 
 NETWORKMODULEDEFS(CAutoOpMod, "Auto op the good guys")

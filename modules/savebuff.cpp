@@ -360,6 +360,7 @@ void CSaveBuffJob::RunJob()
 
 template<> void TModInfo<CSaveBuff>(CModInfo& Info) {
 	Info.SetWikiPage("savebuff");
+	Info.SetHasArgs(false);
 }
 
 NETWORKMODULEDEFS(CSaveBuff, "Stores channel buffers to disk, encrypted")

@@ -419,6 +419,7 @@ void CRouteTimeout::RunJob()
 
 template<> void TModInfo<CRouteRepliesMod>(CModInfo& Info) {
 	Info.SetWikiPage("route_replies");
+	Info.SetHasArgs(false);
 }
 
 NETWORKMODULEDEFS(CRouteRepliesMod, "Send replies (e.g. to /who) to the right client only")

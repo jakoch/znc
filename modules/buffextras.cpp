@@ -66,6 +66,7 @@ public:
 
 template<> void TModInfo<CBuffExtras>(CModInfo& Info) {
 	Info.SetWikiPage("buffextras");
+	Info.SetHasArgs(false);
 }
 
 USERMODULEDEFS(CBuffExtras, "Add joins, parts etc. to the playback buffer")

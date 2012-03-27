@@ -214,6 +214,7 @@ public:
 
 template<> void TModInfo<CNotesMod>(CModInfo& Info) {
 	Info.SetWikiPage("notes");
+	Info.SetHasArgs(false);
 }
 
 USERMODULEDEFS(CNotesMod, "Keep and replay notes")

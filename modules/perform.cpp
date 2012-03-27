@@ -175,6 +175,7 @@ private:
 template<> void TModInfo<CPerform>(CModInfo& Info) {
 	Info.AddType(CModInfo::UserModule);
 	Info.SetWikiPage("perform");
+	Info.SetHasArgs(false);
 }
 
 NETWORKMODULEDEFS(CPerform, "Keeps a list of commands to be executed when ZNC connects to IRC.")
