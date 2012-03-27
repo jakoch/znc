@@ -1,22 +1,19 @@
 <div class="box infobar marg-10 float-right">
 
-	<div class="heading red rounded-bottom-right">
+	<div class="heading green rounded-bottom-right auto-width">
 		<? IF LoggedIn ?>
 		<img src="/pub/img/user.png" alt="user.png">
+		<? VAR SessionUser DEFAULT="-Guest-" ?>
 		<? ELSE ?>
 		<img src="/pub/img/key.png" alt="key.png">
-		<? ENDIF ?>
 		Login
+		<? ENDIF ?>
 	</div>
 
 	<div class="box-inner-content">
 
 		<? IF LoggedIn ?>
-		<span id="infobar_ident">
-			Logged in as <span class="user_name"><? VAR SessionUser DEFAULT="-Guest-" ?></span>
-			<br/>
-			From IP <? VAR SessionIP ?>
-		</span>
+		<span id="infobar_ident">From IP <? VAR SessionIP ?></span>
 		<? ENDIF ?>
 
 		<? INC LoginBar.tmpl ?>
