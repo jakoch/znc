@@ -113,9 +113,9 @@ tr.evenrow td {
 	margin-bottom: 10px;
 	padding-top: 5px;
 	background-color: #EDEDED;
-    width: 100%; /* of main content */
-    /* box-shadow */
-    -webkit-box-shadow: 1px 1px px #fff; /* inset */
+	width: 100%; /* of main content */
+	/* box-shadow */
+	-webkit-box-shadow: 1px 1px px #fff; /* inset */
 	-moz-box-shadow: 1px 1px px #fff;
 	box-shadow: 1px 1px px #fff;
 }
@@ -125,33 +125,27 @@ tr.evenrow td {
 	border: 1px solid #CCCCCC;
 	font-family: Tahoma,sans-serif;
 	font-size: 14px;
-	/*padding: 3px;*/
+	padding: 3px;
 }
 
 .subsection { /* groups a div inputlabel (label) and formelement */
-    display: table;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    width: 100%;
-}
-
-.subsection .checkbox {
-    padding: 10px;
-    text-align: left;
+	display: table;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	width: 100%;
 }
 
 .checkboxandlabel {
-    display: inline-block;
-    width: 150px;
-    margin-right: 50px;
+	display: inline-block;
+	width: 150px;
+	margin-right: 50px;
 }
 
 .subsection .inputlabel {
-	padding: 6px 10px 0 0; /* distance between "tr"s */
 	text-align: left;
 	width: 150px; /* table cell size */
-    display: table-cell; /* input label is displayed as a table cell */
-    vertical-align: top;
+	display: table-cell; /* input label is displayed as a table cell */
+	vertical-align: top;
 }
 
 input {
@@ -168,19 +162,6 @@ input[type=radio]
     width: 10%;
     height: 16px;
     width: 16px;
-}
-
-input[type=checkbox]:checked
-    {
-        background: #0080FF;
-        height: 16px;
-        width: 16px;
-        padding: 0 0 0 0px;
-    }
-
-input[disabled] {
-   border: 1px solid #999;
-   background-color: #ddd;
 }
 
 /* formelement focus */
@@ -313,11 +294,19 @@ td.mod_name {
 }
 
 input.full, textarea.full, .full input, .full textarea {
-    width: 90%;
+	width: 90%;
 }
 
 input.half, textarea.half, .half input, .half textarea {
-    width: 50%;
+	width: 50%;
+}
+
+input.third, textarea.third, .third input, .third textarea {
+	width: 33%;
+}
+
+input.twothird, textarea.twothird, .twothird input, .twothird textarea {
+	width: 80%; /* raised to 82 */
 }
 
 input[type="submit"] {
