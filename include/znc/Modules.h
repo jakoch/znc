@@ -183,7 +183,6 @@ public:
 
 	CModInfo() {
 		m_fLoader = NULL;
-		m_bHasArgs = false;
 	}
 	CModInfo(const CString& sName, const CString& sPath, EModuleType eType) {
 		m_sName = sName;
@@ -231,7 +230,7 @@ public:
 	void SetDescription(const CString& s) { m_sDescription = s; }
 	void SetWikiPage(const CString& s) { m_sWikiPage = s; }
 	void SetArgsHelpText(const CString& s) { m_sArgsHelpText = s; }
-	void SetHasArgs(bool m_bHasArgs) { m_bHasArgs = b; }
+	void SetHasArgs(bool b = false) { m_bHasArgs = b; }
 	void SetLoader(ModLoader fLoader) { m_fLoader = fLoader; }
 	void SetDefaultType(EModuleType eType) { m_eDefaultType = eType; }
 	// !Setters
