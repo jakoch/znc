@@ -59,6 +59,23 @@ aside {
 	 background-color: #B8B8B8;
 }
 
+.zncversion
+{
+	padding-right: 30px;
+    padding-top: 5px;
+}
+
+.zncversion a:hover {
+
+	color: white;
+}
+
+.zncversion a, .zncversion a:link, .zncversion a:active, .zncversion a:visited, .zncversion a:focus {
+        color: white;
+        text-decoration: none;
+        outline: none;
+}
+
 #breadcrumb {
 	font-size: 14px;
 	font-weight: bold;
