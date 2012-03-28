@@ -115,7 +115,7 @@ tbody td {
 }
 
 td, th {
-	min-width: 120px;
+	min-width: 60px;
 	padding: 4px 12px;
 }
 
@@ -223,6 +223,7 @@ h3 {
 
 td.mod_name {
 	font-size: 13px;
+	width: 120px;
 }
 
 /* box */
