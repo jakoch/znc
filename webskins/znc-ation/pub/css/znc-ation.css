@@ -210,7 +210,7 @@ td.mod_name {
 
 /* box */
 .box {
-	background: none repeat scroll 0 0 white;
+	background: none repeat scroll 0 0 #ffffff;
 	border: 5px double #DDDDDD;
 	margin: 0 0 20px;
 	padding: 0;
@@ -225,7 +225,7 @@ td.mod_name {
 	padding: 5px 10px;
 	width: 50%;
 	/* text-shadow */
-	text-shadow: 1px 1px 1px black;
+	text-shadow: 1px 1px 1px #000000;
 	filter: dropshadow(color=#00000, offx=1, offy=1);
 }
 
@@ -253,17 +253,17 @@ td.mod_name {
 .blue {
 	background-color: #00A6FC;
 	border: 1px inset #00A6FC;
-	color: white;
+	color: #ffffff;
 }
 .red {
 	background-color: #E91C21;
 	border: 1px inset #E91C21;
-	color: white;
+	color: #ffffff;
 }
-.white {
+.#ffffff {
 	background-color: #E9E9E9;
 	border: 1px inset #E9E9E9;
-	color: black;
+	color: #000000;
 }
 .black {
 	background-color: #141414;
@@ -273,7 +273,12 @@ td.mod_name {
 .green {
 	background-color: #7FAE00;
 	border: 1px inset #7FAE00;
-	color: white;
+	color: #ffffff;
+}
+.yellow {
+	background-color: #fcd400;
+	border: 1px inset #fcd400;
+	color: #000000;
 }
 
 /* login + logout boxes */
@@ -289,7 +294,7 @@ td.mod_name {
 }
 
 .user_name {
-	color: black;
+	color: #000000;
 	font-weight: bold;
 }
 
@@ -394,7 +399,7 @@ header {
 }
 
 .triangle-left {
-	border-color: transparent darkred transparent transparent;
+	border-color: transparent #8B0000 transparent transparent;
 	border-style: solid;
 	border-width: 15px;
 	height: 0;
@@ -406,7 +411,7 @@ header {
 }
 
 .triangle-right {
-	border-color: transparent transparent transparent darkred;
+	border-color: transparent transparent transparent #8B0000;
 	border-style: solid;
 	border-width: 15px;
 	height: 0;
@@ -492,7 +497,7 @@ ul.nav li .subitem  {
 
 ul a:hover:before, ul a:focus:before {
 	content: "» ";
-	color: black;
+	color: #000000;
 	font-size: 14px;
 	font-weight: bold;
 	/* element is indented by size of content, so subtract width of content */
