@@ -115,7 +115,7 @@ tbody td {
 }
 
 td, th {
-	min-width: 50px;
+	min-width: 120px;
 	padding: 4px 12px;
 }
 
