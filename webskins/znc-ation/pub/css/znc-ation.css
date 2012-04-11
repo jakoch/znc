@@ -510,7 +510,7 @@ ul.nav li .modtitle { /* title of a module */
 }
 
 ul.nav li .subitem  {
-	padding-left: 1em;
+	padding-left: 17px;
 }
 
 ul a:hover:before, ul a:focus:before {
