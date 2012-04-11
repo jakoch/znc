@@ -183,6 +183,7 @@ public:
 
 	CModInfo() {
 		m_fLoader = NULL;
+		m_bHasArgs = false;
 	}
 	CModInfo(const CString& sName, const CString& sPath, EModuleType eType) {
 		m_sName = sName;
