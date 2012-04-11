@@ -107,7 +107,8 @@ table {
 	font-size: 14px;
 }
 thead td, th {
-	background-color: #BEBEBE;
+	background-color: #CECECE;
+	font-weight: bold;
 }
 
 tbody td {
