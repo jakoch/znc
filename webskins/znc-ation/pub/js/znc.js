@@ -12,8 +12,8 @@ $(document).ready(function()
         className: 'tip-yellowsimple',
         showOn: 'focus',
         alignTo: 'target',
-        alignX: 'inner-left',
+        alignX: 'center',
         offsetX: 0,
         offsetY: 5
-    });    
+    });
 })
