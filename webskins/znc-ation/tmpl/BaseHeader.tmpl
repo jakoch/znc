@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<? INC DocType.tmpl ?>
 <? INC Options.tmpl ?>
 <? ADDROW CSSLoop HREF=/pub/css/znc-ation.css ?>
 <? ADDROW CSSLoop HREF=/pub/css/tip-yellowsimple.css ?>
@@ -7,9 +7,9 @@
 <? ADDROW JSLoop HREF=/pub/js/jquery.poshytip.min.js ?>
 <? ADDROW JSLoop HREF=/pub/js/jquery.checkbox.min.js ?>
 <? ADDROW JSLoop HREF=/pub/js/znc.js ?>
-<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
 	<title>ZNC - <? VAR Title DEFAULT="Web Frontend" ?></title>
 	<? LOOP CSSLoop ?>
 	<?IF HREF?><link rel="stylesheet" href="<? VAR HREF ?>" /><?ENDIF?>
@@ -20,7 +20,7 @@
 	<?IF HREF?><script type="text/javascript" src="<? VAR HREF ?>"></script><?ENDIF?>
 	<?ENDLOOP?>
 
-		<? INC ExtraHeader.tmpl ?>
+	<? INC ExtraHeader.tmpl ?>
 </head>
 <body>
 
