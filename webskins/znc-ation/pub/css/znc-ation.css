@@ -50,6 +50,7 @@ a:hover {color: red}  /* mouse over link */
 #main {
 	background-color: #F8F8F8;
 	padding: 20px;
+	min-height: 450px;
 }
 
 aside {
